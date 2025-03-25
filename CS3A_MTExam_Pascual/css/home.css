@@ -1,0 +1,22 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 10x;
+    padding:10px;
+    text-align: center;
+    background-color: wheat;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    background-color: crimson;
+}
+nav > .buttons{
+    background-color: crimson;
+    font-size: 15px;
+    border: 0;
+    text-align: center;
+    align-content: center;
+    height: 100px;
+}

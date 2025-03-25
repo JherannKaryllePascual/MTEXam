@@ -1,0 +1,158 @@
+
+.container{
+    display: grid;
+    grid: 1fr 4fr;
+}
+.product{
+    padding: 10px;
+    text-align: center;
+    background-color: darksalmon;
+    border: 2px solid brown;
+}
+.container > .product > p{
+    position: relative;
+    left: 8px;
+    top: 50px;
+}
+.product > img{
+    border-radius: 10px;
+}
+img{
+    height: 250px;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr;
+    background-color: darksalmon;
+}
+nav > .buttons{
+    background-color: darksalmon;
+    font-size: 15px;
+    border: 0;
+    text-align: center;
+    align-content: center;
+    height: 100px;
+}
+nav > .buttons > a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+nav > p{
+    color: black;
+    text-align: center;
+    align-content: center;
+    font-size: 31px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 12px;
+    gap: 12px;
+    background-color: brown;
+}
+.grid > div{
+    background-color: coral;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    border: 1px solid darksalmon;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: darksalmon;
+    border-radius:4px ;
+}
+.grid img{
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+}
+.grid p{
+    font-size: 14px;
+    margin: 12px;
+    word-wrap: break-word;
+    padding: 0;
+}
+.grid button{
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: yellowgreen ;
+    border-radius: 4px;
+}
+.grid > .product{
+    border: 1px solid black;
+}
+.grid > .product > .remove_from_cart{
+    background-color: rgb(253, 2, 2);
+    color: black;
+    width: 60%;
+    margin-bottom: 12px;
+}
+.grid > .product > .add_to_cart{
+    width: 60%;
+    margin-bottom: 12px;
+}
+.hero{
+    height: 350px;
+    background-color: wheat;
+    background-image: url('/assets/hero.png');
+    background-size: cover;
+}
+main{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+aside{
+    border: 0;
+    padding-top: 12px;
+    border: 1px solid brown;
+    background-color: coral;
+}
+footer{
+    height: 120px;
+    text-align: center;
+    background-color: burlywood;
+    color: black;
+    align-content: center;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    margin: o;
+    border: 2px solid black;
+    aspect-ratio: 3/4;
+}
+.total-cart-price{
+    margin-top: 12px;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    padding: 9px;
+    color: white;
+    background-color: black;
+}
+.list_of_items{
+    background-color: white;
+    padding: 2px;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
