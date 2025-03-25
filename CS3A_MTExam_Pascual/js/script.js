@@ -52,7 +52,7 @@ function updateCartDisplay(){
     //loop through the cart object and display each producy
     for (let product in cart){
         const listItem = document.createElement('li');
-        listItem.innerText = '${product} -Quantity:${cart[product].quantity} -Total Product Price:Php ${cart[product].totalPrice.toFixed(2)}';
+        listItem.innerText = `${product} -Quantity:${cart[product].quantity} -Total Product Price:Php ${cart[product].totalPrice.toFixed(2)}`;
         cartList.appendChild(listItem); // add the item to the cart list
     }
     //calculate and display the total price
@@ -64,13 +64,13 @@ function updateCartDisplay(){
     //loop through the cart object and display each product
     for(let product in cart){
         const listItem = document.createElement('li');
-        listItem.innerText = '${product} Quantity: ${cart[product].quantity} Total Price:Php $ {cart[product].totalPrice.toFixed(2)}';
+        listItem.innerText = `${product} Quantity: ${cart[product].quantity} Total Price:Php ${cart[product].totalPrice.toFixed(2)}`;
         listItem.classList.add("list_of_items");
         cartList.appendChild(listItem); //add the item to the cart list
     }
     const totalPrice = calculateTotalPrice();
     const totalPriceElement = document.createElement('div');
-    totalPriceElement.innerText = 'Total Price: Php $ {totalPrice.toFixed(2)}';
+    totalPriceElement.innerText = `Total Price: Php ${totalPrice.toFixed(2)}`;
     totalPriceElement.classList.add("total-cart-price");
     cartList.appendChild(totalPriceElement);
 }
